@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    padding: 0 100px;
+}
+
+header {
+    font-size: 25px;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #3c917b;
+    color: white;
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ebf9f6;
+}
+
+#first {
+    background-color: #ebf9f6;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#firstImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstImg img {
+    width: 70%;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#firstArticle {
+    padding: 0 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    color: #ec825b;
+    font-size: 40px;
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: #3c917b;
+}
+
+#firstArticle a {
+    margin-top: 50px;
+    background-color: #ec825b;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#skills .container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skillsSpans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+#skillsSpans div {
+    border: 1px solid #3c917b;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#skillsSpans div:hover {
+    background-color: #ec825b;
+    border: none;
+}
+
+#skillsSpans div:hover ul {
+    color: white;
+}
+
+#skillsSpans div:hover i {
+    color: white;
+}
+
+#skillsSpans div ul {
+    list-style: none;
+    font-size: 20px;
+    color: #3c917b;
+}
+
+#skillsSpans div i {
+    font-size: 35px;
+    color: #ec825b;
+}
+
+#projects {
+    background-color: #ebf9f6;
+    margin-top: 50px;
+}
+
+#projects .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#download .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#projectsCards {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#projectsCards div {
+    border: 1px solid #3c917b;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#projectsCards div a {
+    background-color: #ebf9f6;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ec825b;
+}
+
+#download div p {
+    padding: 10px 0;
+}
+
+#download div a {
+    background-color: #3c917b;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+#contact {
+    background-color: #ebf9f6;
+    margin-top: 50px;
+}
+
+#contacts {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+#contacts span a {
+    font-size: 30px;
+    color: #3c917b;
+}
+
+footer {
+    background-color: #3c917b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer p {
+    color: #ebf9f6;
+    font-size: 20px;
+}
+.bar{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        padding: 0 50px;
+    }
+    #firstImg {
+        display: none;
+    }
+
+    #first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 80px; /* Adjust the top position according to your header height */
+        right: 0;
+        background-color: #3c917b;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul.open {
+        display: flex; /* Display the navigation links when the menu is open */
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .bar{
+        display: inline;
+    }
+}
